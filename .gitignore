@@ -21,10 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-# public images
-public/images/
-public/images/**
-
-# src images folder
-src/components/image/
-src/components/image/**
