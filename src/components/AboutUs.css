@@ -1,0 +1,1311 @@
+/* Prevent horizontal scroll on mobile */
+* {
+  box-sizing: border-box;
+}
+
+.about-us-section,
+.why-choose-us-section,
+.who-we-are-section,
+.service-reviews-section,
+.room-feel-homey-section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*--------- 1 -----------*/
+.about-us-section .hero-container {
+  position: relative;
+  height: 100vh;
+  background: url('./image/about1.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.about-logo {
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.about-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  margin-top: -160px; /* Adjust this value if needed */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.about-navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.about-navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-navbar ul li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.about-navbar ul li a {
+  text-decoration: none;
+  color: white; /* Default link color white */
+  font-size: 1rem;
+}
+
+.about-navbar .about-item {
+  background-color: #1D4734;
+  opacity: 0.7;
+  position: relative;
+  border-radius: 15px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;  
+}
+.about-item span{
+  position: relative;
+}
+
+.about-navbar .about-item a {
+  color: white;  
+}
+
+
+/* ------- 2 ------- */
+
+.why-choose-us-section {
+    background-color: #254d40;  
+    padding: 20px; 
+    text-align: center;
+    color: white;
+    min-height: 448px;
+    height: auto;
+}
+
+.why-choose-us-section h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    position: relative;
+    top: 60px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.feature-card {
+    background-color: white;
+    color: #254d40;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.feature-card-special {
+    background-color: #4a6c5d;  
+}
+
+.feature-card-special .feature-title,
+.feature-card-special .feature-description,
+.feature-card-special .feature-link {
+    color: white !important;  
+}
+.feature-card .icon {
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.feature-card .icon img {
+    width: 40px;  
+    height: 40px;
+}
+
+.feature-card h3 {
+    color:   #564E4E;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 26px;
+    
+}
+
+.feature-card p {
+    color:   #564E4E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.feature-card a {
+    color: #1D4734;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.feature-card a:hover {
+    text-decoration: underline;
+}
+
+
+/*--------- 3 -----------*/
+
+.who-we-are-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 600px;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 72px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #564E4E;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+  }
+  
+  .categories {
+    margin-top: 20px;
+  }
+  
+  .category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    cursor: pointer;
+    padding: 5px 0;
+    padding-bottom:   0px;
+    padding-top: 20px;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .about-image {
+    max-width: 45%;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-top: 40px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /*----------- 4 ---------------*/
+   
+  .service-reviews-section {
+    background-color: #1D4734;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  .service-reviews-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 96px;
+  }
+  
+  .reviews-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .review-card {
+    background-color: #1D4734;
+    color: #fff;
+    width: 300px;
+    padding: 20px; 
+    text-align: left; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .review-card h3 {
+    font-size: 1.2rem;
+    font-size: 17px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    line-height: 26px;
+  }
+  
+  .review-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-name {
+   
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    line-height: 26px;
+  }
+  
+  .author-position {
+    font-size: 0.9rem; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  
+
+  /*------- 5 ----------*/
+
+  .room-feel-homey-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+   padding-bottom: 100px;
+   height: 500px;
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px;
+    top: 35px;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 44px;
+   
+  }
+  
+  .content {
+    flex: 1.5;
+    padding-left: 20px;
+  }
+  
+  .content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 100%;
+    line-height: 76px;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: left;
+  }
+  
+  .content p {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 28px;
+  }
+  
+  .email-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .email-input-container input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+  }
+  
+  .email-input-container button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color:   #E09B6B;
+    color: white;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+  }
+  
+  .email-input-container button:hover {
+    background-color: #c38b6f;
+  }
+  
+  .submission-message {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: #f1f1f1;
+  }
+  
+  /*--------- 6 ----------*/
+
+.newsletter{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 500px;
+}
+.foot{
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Large Tablets and Small Desktops (1024px - 1440px) */
+@media screen and (max-width: 1440px) {
+  .about-us-section .hero-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .who-we-are-section {
+    height: auto;
+    min-height: 500px;
+  }
+
+  .room-feel-homey-section {
+    height: auto;
+    min-height: 450px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .about-us-section .hero-container {
+    padding: 15px;
+  }
+
+  .about-logo {
+    top: 15px;
+    left: 15px;
+  }
+
+  .about-logo img {
+    height: 50px;
+  }
+
+  .hero-content {
+    margin-top: -100px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    line-height: 24px;
+  }
+
+  .about-navbar {
+    top: 15px;
+    right: 15px;
+  }
+
+  .about-navbar ul li {
+    margin: 0 8px;
+  }
+
+  .about-navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  .why-choose-us-section {
+    height: auto;
+    min-height: 400px;
+    padding: 30px 15px;
+  }
+
+  .why-choose-us-section h2 {
+    font-size: 22px;
+    top: 40px;
+    text-align: center;
+  }
+
+  .features-container {
+    padding-top: 60px;
+    gap: 15px;
+  }
+
+  .feature-card {
+    width: 220px;
+    padding: 15px;
+  }
+
+  .feature-card .icon {
+    margin-left: 0;
+  }
+
+  .who-we-are-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .who-we-are-section .content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .who-we-are-section .content h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .who-we-are-section .content p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .who-we-are-section .categories {
+    padding-left: 0;
+  }
+
+  .who-we-are-section .about-image {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .service-reviews-section {
+    padding: 30px 15px;
+  }
+
+  .service-reviews-section h2 {
+    font-size: 1.6rem;
+    line-height: 50px;
+  }
+
+  .reviews-container {
+    gap: 15px;
+  }
+
+  .review-card {
+    width: 280px;
+    padding: 15px;
+  }
+
+  .room-feel-homey-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    padding-bottom: 60px;
+  }
+
+  .room-feel-homey-section .image-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    top: 0;
+  }
+
+  .room-feel-homey-section .content {
+    flex: 1;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .room-feel-homey-section .content h2 {
+    font-size: 28px;
+    margin-left: 0;
+    width: 100%;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .room-feel-homey-section .content p {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Landscape and Small Tablets (600px - 768px) */
+@media screen and (max-width: 768px) {
+  .about-us-section .hero-container {
+    padding: 10px;
+    min-height: 90vh;
+  }
+
+  .about-logo {
+    top: 10px;
+    left: 10px;
+  }
+
+  .about-logo img {
+    height: 40px;
+  }
+
+  .hero-content {
+    margin-top: -60px;
+    padding: 0 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+    line-height: 22px;
+  }
+
+  .hero-content p br {
+    display: none;
+  }
+
+  .about-navbar {
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .about-navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+
+  .about-navbar ul li {
+    margin: 0 3px;
+  }
+
+  .about-navbar ul li a {
+    font-size: 0.85rem;
+  }
+
+  .about-navbar .about-item {
+    padding: 5px 8px;
+  }
+
+  .why-choose-us-section {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .why-choose-us-section h2 {
+    font-size: 20px;
+    top: 20px;
+    text-align: center;
+  }
+
+  .features-container {
+    padding-top: 50px;
+    gap: 12px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .feature-card .icon {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+
+  .feature-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem;
+  }
+
+  .who-we-are-section {
+    padding: 20px 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .who-we-are-section .content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .who-we-are-section .content h2 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .who-we-are-section .content p {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .who-we-are-section .categories {
+    padding-left: 0;
+  }
+
+  .who-we-are-section .about-image {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .category {
+    font-size: 1.2rem;
+    padding-top: 15px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    padding-left: 0;
+  }
+
+  .service-reviews-section {
+    padding: 25px 10px;
+    margin-top: 30px;
+  }
+
+  .service-reviews-section h2 {
+    font-size: 1.4rem;
+    line-height: 40px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .review-card h3 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .review-card p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .review-author img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .author-position {
+    font-size: 0.85rem;
+  }
+
+  .room-feel-homey-section {
+    padding: 20px 15px;
+    padding-bottom: 50px;
+  }
+
+  .room-feel-homey-section .content h2 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .room-feel-homey-section .content p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .email-input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-input-container input {
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .email-input-container button {
+    border-radius: 30px;
+    width: 100%;
+  }
+}
+
+/* Mobile Portrait (up to 600px) */
+@media screen and (max-width: 600px) {
+  .about-us-section .hero-container {
+    min-height: 80vh;
+    padding: 8px;
+    overflow-x: hidden;
+  }
+
+  .about-logo {
+    top: 8px;
+    left: 8px;
+    z-index: 5;
+  }
+
+  .about-logo img {
+    height: 35px;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    margin-top: -40px;
+    padding: 0 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero-content p {
+    font-size: 0.75rem;
+    line-height: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .about-navbar {
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+    position: absolute;
+  }
+
+  .about-navbar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .about-navbar ul li {
+    margin: 0;
+  }
+
+  .about-navbar ul li a {
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .about-navbar .about-item {
+    padding: 3px 5px;
+  }
+
+  .why-choose-us-section {
+    padding: 15px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .why-choose-us-section h2 {
+    font-size: 18px;
+    top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  .features-container {
+    padding-top: 40px;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .feature-card .icon {
+    margin-left: 0;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .feature-card .icon img {
+    width: 35px;
+    height: 35px;
+    display: block;
+  }
+
+  .feature-card h3 {
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+  }
+
+  .feature-card p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+
+  .who-we-are-section {
+    padding: 15px 8px;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .who-we-are-section .content {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .who-we-are-section .content h2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .who-we-are-section .content p {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .who-we-are-section .categories {
+    margin-top: 15px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .who-we-are-section .about-image {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .who-we-are-section .about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .category {
+    font-size: 1rem;
+    padding-top: 12px;
+    word-wrap: break-word;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    padding-left: 10px;
+    word-wrap: break-word;
+  }
+
+  .service-reviews-section {
+    padding: 20px 8px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .service-reviews-section h2 {
+    font-size: 1.2rem;
+    line-height: 35px;
+    word-wrap: break-word;
+    padding: 0 5px;
+  }
+
+  .reviews-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .review-card {
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+
+  .review-card h3 {
+    font-size: 14px;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+
+  .review-card p {
+    font-size: 11px;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+
+  .review-author {
+    flex-wrap: wrap;
+  }
+
+  .review-author img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+  }
+
+  .author-position {
+    font-size: 0.8rem;
+    word-wrap: break-word;
+  }
+
+  .room-feel-homey-section {
+    padding: 15px 10px;
+    padding-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .room-feel-homey-section .image-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .room-feel-homey-section .image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .room-feel-homey-section .content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .room-feel-homey-section .content h2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .room-feel-homey-section .content p {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+  }
+
+  .email-input-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .email-input-container input {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .email-input-container button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .submission-message {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    word-wrap: break-word;
+  }
+}
+
+/* Extra Small Mobile (up to 400px) */
+@media screen and (max-width: 400px) {
+  .about-us-section .hero-container {
+    padding: 5px;
+  }
+
+  .hero-content h1 {
+    font-size: 1rem;
+    padding: 0 3px;
+  }
+
+  .hero-content p {
+    font-size: 0.7rem;
+    padding: 0 3px;
+  }
+
+  .about-logo img {
+    height: 30px;
+  }
+
+  .about-navbar {
+    top: 5px;
+    right: 5px;
+  }
+
+  .about-navbar ul li a {
+    font-size: 0.6rem;
+  }
+
+  .why-choose-us-section {
+    padding: 12px 5px;
+  }
+
+  .why-choose-us-section h2 {
+    font-size: 16px;
+    top: 10px;
+  }
+
+  .features-container {
+    padding-top: 35px;
+    gap: 8px;
+  }
+
+  .feature-card {
+    padding: 8px;
+  }
+
+  .feature-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .feature-card p {
+    font-size: 0.75rem;
+  }
+
+  .who-we-are-section {
+    padding: 12px 5px;
+  }
+
+  .who-we-are-section .content h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .who-we-are-section .content p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .category {
+    font-size: 0.9rem;
+  }
+
+  .service-reviews-section {
+    padding: 15px 5px;
+  }
+
+  .service-reviews-section h2 {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .review-card {
+    padding: 10px;
+  }
+
+  .review-card h3 {
+    font-size: 13px;
+  }
+
+  .review-card p {
+    font-size: 10px;
+  }
+
+  .room-feel-homey-section {
+    padding: 12px 8px;
+  }
+
+  .room-feel-homey-section .content h2 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .room-feel-homey-section .content p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .email-input-container input,
+  .email-input-container button {
+    font-size: 0.85rem;
+    padding: 7px 10px;
+  }
+}
+
+/* Footer Responsive Styles (if not already handled) */
+@media screen and (max-width: 1024px) {
+  .newsletter {
+    height: auto;
+    padding-top: 0;
+  }
+
+  .foot {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    padding: 20px 10px;
+  }
+}
