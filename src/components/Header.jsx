@@ -199,14 +199,14 @@ function Header() {
           <p className='hero-para'>INTERIOR DESIGN</p>
           <button className="hero-button">Get Started</button>
         </div>
-        <div className="hero-info">
+          <div className="hero-info">
           <div className="hero-info-item item-1">
             <img src="./images/hero-1.png" alt="Customer_Icon" className="hero-info-icon icon-1" />
-            <span className='hero-span'>72k+ Happy <br/> Customers</span>
+            <span className='hero-span'>8k+ Happy <br/> Customers</span>
           </div>
           <div className="hero-info-item item-2">
             <img src="./images/hero-2.png" alt="Listing_Icon" className="hero-info-icon icon-2" />
-            <span className='hero-span span-2'> 200+ New<br/> Listings Everyday!</span>
+            <span className='hero-span span-2'> 20+ New<br/> Listings Everyday!</span>
           </div>
         </div>
       </div>
@@ -309,18 +309,18 @@ function Header() {
               <img src="./images/quote.png" alt="Image" />
             </div>
             <p className='par'>
-            I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!
+            I can wholeheartedly recommend Wolf Media. Their team is reliable, professional and incredibly patient, always focused on understanding what the client truly needs.
             </p>
             <hr className="testimonial-divider"/>
             <div className="testimonial-author">
-              <img src="./images/Page5(2).png" alt="Barbara D. Smith" className="author-image" />
-              <p className='para-author'>Barbara D. Smith</p>
+              <img src="./images/Page5(2).png" alt="Bunker media" className="author-image" />
+              <p className='para-author'>Bunker media</p>
               <div className="star-rating">
                 <span className="star-filled">★</span>
                 <span className="star-filled">★</span>
                 <span className="star-filled">★</span>
                 <span className="star-filled">★</span>
-                <span className="star-empty">☆</span>
+                <span className="star-filled">★</span>
               </div>
             </div>
           </div>
